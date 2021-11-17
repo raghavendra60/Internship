@@ -49,22 +49,7 @@ y = np.linspace(-10, 5, 100)
  
 # calculate the y value for each element of the x vector
 x = y**2 + 6*y - 27 
-ax = fig.add_subplot(1, 1, 1)
-plt.grid()
-ax.spines['left'].set_position('center')
-ax.spines['bottom'].set_position('zero')
-ax.spines['right'].set_color('none')
-ax.spines['top'].set_color('none')
-ax.xaxis.set_ticks_position('bottom')
-ax.yaxis.set_ticks_position('left')
-plt.xlabel('$x$')
-plt.ylabel('$y$')
-plt.legend(loc='lower left')
-# plot the function
-plt.plot(x,y, 'r',label=S)
-
-# show the plot
-plt.show()
+ 
 fig, ax = plt.subplots()
 ax.plot(x, y) 
 plt.grid()
