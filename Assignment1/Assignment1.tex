@@ -171,7 +171,7 @@ A line of length 10 and one end is at point (2, -3); if the abscissa of the othe
 \item
 The distance between two vectors is given by 
 \begin{align}
-\norm{\vec{A}-\vec{B}}=\sqrt{\myvec{\vec{A}-\vec{B}}^\intercal \myvec{\vec{A}-\vec{B}}} \label{eq:1.1}
+\norm{\vec{A}-\vec{B}}=\sqrt{\myvec{\vec{A}-\vec{B}}^\top \myvec{\vec{A}-\vec{B}}} \label{eq:1.1}
 \end{align}
 Let
 \begin{align}
@@ -179,7 +179,7 @@ Let
 \end{align}
 
 \begin{align}
-\\\vec{A-B}&=\myvec{-8\\-3-y_1}
+\\\vec{A-B}&=\myvec{-8\\-3-y_1}  \label{eq:1}
 \end{align}
 Given Distance between $\vec{A}$ and $\vec{B}$ is 10
 \\From \eqref{eq:1.1} & \eqref{eq:1}
@@ -187,22 +187,22 @@ Given Distance between $\vec{A}$ and $\vec{B}$ is 10
 \norm{\myvec{-8\\-3-y_1}} &=10 \label{eq2}
 \end{align}
 \begin{align}
-\sqrt{\myvec{-8\\-3-y_1}^\intercal\myvec{-8\\-3-y1}}&=10
+\sqrt{\myvec{-8\\-3-y_1}^\top\myvec{-8\\-3-y1}}&=10
 \end{align}
 \begin{align}
 \sqrt{\myvec{-8&&-3-y_1}\myvec{-8\\-3-y_1}}&=10
 \end{align}
 \begin{align}
-\sqrt{\myvec{-8}^2+\myvec{-3-y_1}^2}&=10
+\sqrt{\myvec{-8}^2+\myvec{-3-y_1}^2}&=10\label{eq:1} \label{eq2}
 \end{align}
 \begin{align}
-\myvec{-8}^2+\myvec{-3-y_1}^2&=10^2
+\myvec{-8}^2+\myvec{-3-y_1}^2&=10^2\label{eq:1} \label{eq2}
 \end{align}
 \begin{align}
-64+9+6 y_1+y_1^2 &=100
+64+9+6 y_1+y_1^2 &=100\label{eq:1} \label{eq2}
 \end{align}
 \begin{align}
-&=y_1^2+6y_1-27
+&=y_1^2+6y_1-27\label{eq:1} \label{eq2}
 \end{align}
 On solving for $y_1$ in above quadratic equation
 \begin{align}
